@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Management System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4b0082, #6a0dad);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #2e0249;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #570a99;
+    }
+    .container {
+      padding: 30px;
+    }
+    h2 {
+      color: #4b0082;
+      margin-bottom: 10px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background: #eee;
+    }
+    input, select, button {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background: #4b0082;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #6a0dad;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2e0249;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Library Management System</h1>
+  <p>Smart • Secure • Simple Library Operations</p>
+</header>
+
+<nav>
+  <a href="#dashboard">Dashboard</a>
+  <a href="#books">Books</a>
+  <a href="#members">Members</a>
+  <a href="#issue">Issue / Return</a>
+  <a href="#login">Login</a>
+</nav>
+
+<div class="container" id="dashboard">
+  <div class="card">
+    <h2>Dashboard</h2>
+    <p>Total Books: <b>1200</b></p>
+    <p>Registered Members: <b>350</b></p>
+    <p>Books Issued: <b>210</b></p>
+    <p>Available Books: <b>990</b></p>
+  </div>
+</div>
+
+<div class="container" id="books">
+  <div class="card">
+    <h2>Book Management</h2>
+    <input type="text" placeholder="Book Title" />
+    <input type="text" placeholder="Author" />
+    <input type="text" placeholder="ISBN" />
+    <button>Add Book</button>
+
+    <table>
+      <tr>
+        <th>Book Title</th>
+        <th>Author</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Operating Systems</td>
+        <td>Abraham Silberschatz</td>
+        <td>Available</td>
+      </tr>
+      <tr>
+        <td>Database Systems</td>
+        <td>Raghu Ramakrishnan</td>
+        <td>Issued</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="container" id="members">
+  <div class="card">
+    <h2>Member Management</h2>
+    <input type="text" placeholder="Member Name" />
+    <input type="text" placeholder="Member ID" />
+    <select>
+      <option>Student</option>
+      <option>Faculty</option>
+    </select>
+    <button>Add Member</button>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Member ID</th>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <td>Ravi Kumar</td>
+        <td>ST102</td>
+        <td>Student</td>
+      </tr>
+      <tr>
+        <td>Dr. Suresh</td>
+        <td>FC210</td>
+        <td>Faculty</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="container" id="issue">
+  <div class="card">
+    <h2>Issue / Return Books</h2>
+    <input type="text" placeholder="Book ID / ISBN" />
+    <input type="text" placeholder="Member ID" />
+    <select>
+      <option>Issue Book</option>
+      <option>Return Book</option>
+    </select>
+    <button>Submit</button>
+  </div>
+</div>
+
+<div class="container" id="login">
+  <div class="card">
+    <h2>User Login</h2>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <button>Login</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Library Management System | Designed for Real‑World Use</p>
+</footer>
+
+</body>
+</html>
